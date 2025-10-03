@@ -1,5 +1,7 @@
 ﻿package dto;
 
-public record AnimalDTO(int id, )
+import java.sql.Timestamp;
+
+public record AnimalDTO(int id, double weight, Timestamp arrivalDate)
 {
 }

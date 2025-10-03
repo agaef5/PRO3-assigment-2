@@ -1,5 +1,5 @@
 ﻿package dto;
 
-public record TrayDTO()
+public record TrayDTO(int id, )
 {
 }
