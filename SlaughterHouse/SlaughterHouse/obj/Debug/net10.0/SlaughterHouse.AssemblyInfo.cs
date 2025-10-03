@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SlaughterHouse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2496c10167f875e6ed794f4384912bf4793bb4d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+697d2fb92da6eb90b6b5133e17cdfdb5b2b0f643")]
 [assembly: System.Reflection.AssemblyProductAttribute("SlaughterHouse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SlaughterHouse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
