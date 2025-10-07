@@ -1,4 +1,4 @@
-﻿package dto;
+package com.slaughterhouse.dto;
 
 import java.sql.Timestamp;
 
