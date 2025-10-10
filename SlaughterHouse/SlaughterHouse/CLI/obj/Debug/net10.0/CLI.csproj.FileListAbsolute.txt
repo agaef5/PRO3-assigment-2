@@ -1,0 +1,15 @@
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\bin\Debug\net10.0\CLI.exe
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\bin\Debug\net10.0\CLI.deps.json
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\bin\Debug\net10.0\CLI.runtimeconfig.json
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\bin\Debug\net10.0\CLI.dll
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\bin\Debug\net10.0\CLI.pdb
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.AssemblyInfoInputs.cache
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.AssemblyInfo.cs
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.csproj.CoreCompileInputs.cache
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.sourcelink.json
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.dll
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\refint\CLI.dll
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.pdb
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\CLI.genruntimeconfig.cache
+C:\Users\veryc\Desktop\Univer\Pro3\Assignment2\PRO3-assigment-2\SlaughterHouse\SlaughterHouse\CLI\obj\Debug\net10.0\ref\CLI.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\SlaughterHouse.csproj": {}
+    "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\CLI\\CLI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\SlaughterHouse.csproj": {
+    "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\CLI\\CLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\SlaughterHouse.csproj",
-        "projectName": "SlaughterHouse",
-        "projectPath": "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\SlaughterHouse.csproj",
+        "projectUniqueName": "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\CLI\\CLI.csproj",
+        "projectName": "CLI",
+        "projectPath": "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\CLI\\CLI.csproj",
         "packagesPath": "C:\\Users\\veryc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\obj\\",
+        "outputPath": "C:\\Users\\veryc\\Desktop\\Univer\\Pro3\\Assignment2\\PRO3-assigment-2\\SlaughterHouse\\SlaughterHouse\\CLI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\veryc\\AppData\\Roaming\\NuGet\\NuGet.Config"
