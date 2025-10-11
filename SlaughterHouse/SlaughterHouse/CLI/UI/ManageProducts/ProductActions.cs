@@ -12,14 +12,14 @@ namespace SlaughterhouseCLI.ManageProducts
             {
                 Console.Write("Enter animal ID for half-animal product: ");
                 string animalId = Console.ReadLine() ?? string.Empty;
-                // Pack the half-animal product
+                // Pack the half-animal product(I don't know if this should be done by me or by someone else  :D)
                 Console.WriteLine($"Packing half-animal product for animal {animalId}.");
             }
             else if (productType == "tray")
             {
                 Console.Write("Enter tray ID to pack: ");
                 string trayId = Console.ReadLine() ?? string.Empty;
-                // Pack the tray
+                // Pack the tray(I don't know if this should be done by me or by someone else  :D)
                 Console.WriteLine($"Packing tray {trayId} for distribution.");
             }
             else
