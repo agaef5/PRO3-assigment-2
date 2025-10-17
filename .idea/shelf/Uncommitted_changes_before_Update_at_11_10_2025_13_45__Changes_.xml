@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_11_10_2025_13_45_[Changes]" date="1760183121301" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2025_13_45_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/10/2025 13:45 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="SlaughterHouse/SlaughterHouse/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="SlaughterHouse/SlaughterHouse/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2025_13_45_[Changes]/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.assets.cache" />
+    <option name="AFTER_PATH" value="SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2025_13_45_[Changes]/SlaughterHouse.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2025_13_45_[Changes]/SlaughterHouse.AssemblyInfoInputs.cache" />
+  </binary>
+</changelist>

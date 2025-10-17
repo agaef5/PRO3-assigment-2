@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ba6a5d7-1846-4f52-94c2-7682a6cb6534" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SharedProtos/slaughterhouse.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SlaughterHouse/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/CLI.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/CliApp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/UI/ManageAnimals/AnimalActions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/UI/ManageParts/PartActions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/UI/ManageProducts/ProductActions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/bin/Debug/net10.0/CLI.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/bin/Debug/net10.0/CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/bin/Debug/net10.0/CLI.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/bin/Debug/net10.0/CLI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/bin/Debug/net10.0/CLI.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/CLI.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/CLI.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/CLI.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/CLI.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/ref/CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/Debug/net10.0/refint/CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/Animal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/AnimalPart.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/Product.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/Tray.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Enums/PartType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Enums/ProductStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Enums/ProductType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Services/ProductService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Services/RecalServicel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Services/TrayService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/SlaughterHouse.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/Debug/net10.0/SlaughterHouse.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/SlaughterHouse.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/SlaughterHouse.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/SlaughterHouse.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/butcher.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="1972" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Samojak&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/agaef5/PRO3-assigment-2.git&quot;,
+    &quot;accountId&quot;: &quot;47b55822-98ad-4e23-bda1-1d45c015e526&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/CliApp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/UI/ManageAnimals/AnimalActions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/CLI/UI/ManageParts/PartActions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/AnimalPart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/Product.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Entities/Tray.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Enums/PartType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Enums/ProductStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Enums/ProductType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Services/ProductService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Services/RecalServicel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SlaughterHouse/SlaughterHouse/Services/TrayService.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="33Sc6MvayUeMkoZOLVTMoXCXoxZ" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;samoTest&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ba6a5d7-1846-4f52-94c2-7682a6cb6534" name="Changes" comment="" />
+      <created>1759313738024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759313738024</updated>
+      <workItem from="1759313739389" duration="782000" />
+      <workItem from="1759473428149" duration="1654000" />
+      <workItem from="1759488013784" duration="35000" />
+      <workItem from="1760183105222" duration="330000" />
+      <workItem from="1760706177869" duration="2754000" />
+      <workItem from="1760721293729" duration="30000" />
+      <workItem from="1760721341062" duration="1527000" />
+    </task>
+    <task id="LOCAL-00001" summary="pom">
+      <option name="closed" value="true" />
+      <created>1760707593752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760707593752</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

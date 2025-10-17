@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Base protobuf dependency (no client/server generated) -->
+        <PackageReference Include="Google.Protobuf" Version="3.27.0" />
+        <PackageReference Include="Grpc.Tools" Version="2.66.0" PrivateAssets="All" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- Reference shared proto definitions (for shared models) -->
+        <Protobuf Include="..\SharedProtos\slaughterhouse.proto" GrpcServices="None" />
+    </ItemGroup>
+
+</Project>

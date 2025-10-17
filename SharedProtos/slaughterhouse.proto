@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+package slaughterhouse;
+option java_multiple_files = true;
+option java_package = "com.slaughterhouse.grpc";
+option java_outer_classname = "SlaughterHouseProto";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+// ================= Enums =================
+
+// Matches your AnimalPart.partType and Tray.partType
+enum PartType {
+  PART_TYPE_UNSPECIFIED = 0;
+  SHOULDER = 1;
+  LOIN = 2;
+  BELLY = 3;
+  LEG = 4;
+}
+
+// For identifying what kind of product it is
+enum ProductType {
+  PRODUCT_TYPE_UNSPECIFIED = 0;
+  ANIMAL = 1;
+  HALF_ANIMAL = 2;
+}
+
+// Tracks where the product is in its lifecycle
+enum ProductStatus {
+  PRODUCT_STATUS_UNSPECIFIED = 0;
+  PACKED = 1;
+  SHIPPED = 2;
+  RECALLED = 3;
+}
+
+// ================= Entities =================
+
+// Matches your JPA entity com.slaughterhouse.Entities.Animal
+message Animal {
+  int64 animal_id = 1;                  // maps to Long id
+  string registration_number = 2;       // unique in DB
+  double animal_weight = 3;             // matches double weight
+  google.protobuf.Timestamp arrival_date = 4; // Timestamp for arrivalDate
+}
+
+// Matches AnimalPart.java
+message AnimalPart {
+  int64 part_id = 1;
+  int64 animal_id = 2;
+  double part_weight = 3;
+  PartType part_type = 4;
+  google.protobuf.Timestamp arrival_date = 5;
+  int64 tray_id = 6; // optional
+}
+
+// Matches Tray.java
+message Tray {
+  int64 tray_id = 1;
+  PartType part_type = 2;
+  double max_capacity = 3;
+  double current_weight = 4;
+}
+
+// Matches Product.java
+message Product {
+  int64 product_id = 1;
+  string name = 2;
+  double product_weight = 3;
+  ProductType product_type = 4;
+  ProductStatus product_status = 5;
+}
+
+// ================= Requests & Responses =================
+
+message AnimalRequest {
+  Animal animal = 1;
+}
+
+message AnimalResponse {
+  Animal animal = 1;
+}
+
+message AllAnimalsResponse {
+  repeated Animal animals = 1;
+}
+
+// ================= Service =================
+
+service SlaughterHouseService {
+  rpc AddAnimal (AnimalRequest) returns (AnimalResponse);
+  rpc GetAllAnimals (google.protobuf.Empty) returns (AllAnimalsResponse);
+}
