@@ -2,7 +2,6 @@ package com.slaughterhouse;
 
 import com.slaughterhouse.DAO.AnimalRepository;
 import com.slaughterhouse.Entities.Animal;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,24 +16,24 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
-  // ✅ Temporary check — this will print your DB URL and username when the app starts
-  @Bean
-  CommandLineRunner seedAndRead(AnimalRepository animals) {
-    return args -> {
-      // create + save
-      Animal a = new Animal();
-      a.setRegistrationNumber("SK-102");
-      a.setWeight(122.4);
-      a.setArrivalDate(Timestamp.valueOf(java.time.LocalDateTime.now())); // or
-      animals.save(a);
 
-      // read back
-      System.out.println("=== Animals in DB ===");
-      animals.findAll().forEach(an ->
-          System.out.printf("id=%d reg=%s weight=%.2f%n",
-              an.getId(), an.getRegistrationNumber(), an.getWeight()));
-    };
-  }
+//  @Bean
+//  CommandLineRunner seedAndRead(AnimalRepository animals) {
+//    return args -> {
+//      // create + save
+//      Animal a = new Animal();
+//      a.setRegistrationNumber("SK-105");
+//      a.setWeight(122.4);
+//      a.setArrivalDate(Timestamp.valueOf(java.time.LocalDateTime.now())); // or
+//      animals.save(a);
+//
+//      // read back
+//      System.out.println("=== Animals in DB ===");
+//      animals.findAll().forEach(an ->
+//          System.out.printf("id=%d reg=%s weight=%.2f%n",
+//              an.getId(), an.getRegistrationNumber(), an.getWeight()));
+//    };
+//  }
 
 
 }
