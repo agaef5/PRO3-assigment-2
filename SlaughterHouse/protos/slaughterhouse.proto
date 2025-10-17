@@ -1,0 +1,88 @@
+// File: protos/slaughterhouse.proto
+syntax = "proto3";
+
+// Package name for your generated code
+option java_package = "com.slaughterhouse.grpc";
+option java_multiple_files = true;
+option csharp_namespace = "SlaughterHouse.Grpc";
+
+// Service and message definitions for the slaughterhouse system
+service AnimalService {
+  // Register a new animal in the system
+  rpc RegisterAnimal(RegisterAnimalRequest) returns (RegisterAnimalResponse) {}
+
+  // Get animal details by ID
+  rpc GetAnimal(GetAnimalRequest) returns (AnimalResponse) {}
+}
+
+// Request message for registering a new animal
+message RegisterAnimalRequest {
+  string registration_number = 1;
+  double weight = 2;
+  int64 arrival_timestamp = 3; // Unix timestamp in milliseconds
+}
+
+// Response message for animal registration
+message RegisterAnimalResponse {
+  int64 animal_id = 1;
+  string status = 2;
+}
+
+// Request message for getting animal details
+message GetAnimalRequest {
+  int64 animal_id = 1;
+}
+
+// Response message containing animal details
+message AnimalResponse {
+  int64 id = 1;
+  string registration_number = 2;
+  double weight = 3;
+  int64 arrival_timestamp = 4;
+}
+
+// Service for managing animal parts
+service AnimalPartService {
+  // Cut an animal into parts
+  rpc CutAnimal(CutAnimalRequest) returns (CutAnimalResponse) {}
+
+  // Get parts for a specific animal
+  rpc GetAnimalParts(GetAnimalPartsRequest) returns (GetAnimalPartsResponse) {}
+}
+
+// Request message for cutting an animal into parts
+message CutAnimalRequest {
+  int64 animal_id = 1;
+  repeated AnimalPartInfo parts = 2;
+}
+
+// Information about an animal part
+message AnimalPartInfo {
+  string part_type = 1; // e.g., "Shoulder", "Loin", "Belly", "Leg"
+  double weight = 2;
+}
+
+// Response message for cutting an animal
+message CutAnimalResponse {
+  bool success = 1;
+  string message = 2;
+  repeated int64 part_ids = 3;
+}
+
+// Request to get parts for an animal
+message GetAnimalPartsRequest {
+  int64 animal_id = 1;
+}
+
+// Response with all parts for an animal
+message GetAnimalPartsResponse {
+  repeated AnimalPartDetails parts = 1;
+}
+
+// Detailed information about an animal part
+message AnimalPartDetails {
+  int64 part_id = 1;
+  string part_type = 2;
+  double weight = 3;
+  int64 animal_id = 4;
+}
