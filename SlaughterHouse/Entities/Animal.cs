@@ -1,4 +1,6 @@
-﻿namespace SlaughterHouse.Entities;
+﻿using System;
+
+namespace SlaughterHouse.Entities;
 
 public class Animal
 {
