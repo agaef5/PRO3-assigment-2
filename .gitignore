@@ -1,0 +1,22 @@
+﻿# IDE
+.idea/
+*.iml
+
+# .NET build
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Java build
+target/
+
+# Logs & misc
+*.log
+*.user
+*.cache
+*.suo
+
+# Protobuf generated client stubs
+*Grpc.cs
+*protodep
