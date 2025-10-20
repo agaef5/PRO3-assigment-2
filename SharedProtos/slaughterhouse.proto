@@ -73,21 +73,54 @@ message Product {
 
 // ================= Requests & Responses =================
 
-message AnimalRequest {
-  Animal animal = 1;
-}
+message AnimalRequest {Animal animal = 1;}
+message AnimalResponse {Animal animal = 1;}
+message AllAnimalsResponse {repeated Animal animals = 1;}
+message GetAnimalRequest { int64 animal_id = 1; }
+message DeleteAnimalRequest { int64 animal_id = 1; }
 
-message AnimalResponse {
-  Animal animal = 1;
-}
+message AnimalPartRequest { AnimalPart animal_part = 1; }
+message AnimalPartResponse { AnimalPart animal_part = 1; }
+message AllAnimalPartsResponse { repeated AnimalPart animal_parts = 1; }
+message GetAnimalPartRequest { int64 part_id = 1; }
+message DeleteAnimalPartRequest { int64 part_id = 1; }
 
-message AllAnimalsResponse {
-  repeated Animal animals = 1;
-}
+message TrayRequest { Tray tray = 1; }
+message TrayResponse { Tray tray = 1; }
+message AllTraysResponse { repeated Tray trays = 1; }
+message GetTrayRequest { int64 tray_id = 1; }
+message DeleteTrayRequest { int64 tray_id = 1; }
+
+message ProductRequest { Product product = 1; }
+message ProductResponse { Product product = 1; }
+message AllProductsResponse { repeated Product products = 1; }
+message GetProductRequest { int64 product_id = 1; }
+message DeleteProductRequest { int64 product_id = 1; }
 
 // ================= Service =================
 
 service SlaughterHouseService {
   rpc AddAnimal (AnimalRequest) returns (AnimalResponse);
+  rpc GetAnimal (GetAnimalRequest) returns (AnimalResponse);
   rpc GetAllAnimals (google.protobuf.Empty) returns (AllAnimalsResponse);
+  rpc UpdateAnimal (AnimalRequest) returns (AnimalResponse);
+  rpc DeleteAnimal (DeleteAnimalRequest) returns (google.protobuf.Empty);
+
+  rpc AddAnimalPart (AnimalPartRequest) returns (AnimalPartResponse);
+  rpc GetAnimalPart (GetAnimalPartRequest) returns (AnimalPartResponse);
+  rpc GetAllAnimalParts (google.protobuf.Empty) returns (AllAnimalPartsResponse);
+  rpc UpdateAnimalPart (AnimalPartRequest) returns (AnimalPartResponse);
+  rpc DeleteAnimalPart (DeleteAnimalPartRequest) returns (google.protobuf.Empty);
+
+  rpc AddTray (TrayRequest) returns (TrayResponse);
+  rpc GetTray (GetTrayRequest) returns (TrayResponse);
+  rpc UpdateTray (TrayRequest) returns (TrayResponse);
+  rpc GetAllTrays (google.protobuf.Empty) returns (AllTraysResponse);
+  rpc DeleteTray (DeleteTrayRequest) returns (google.protobuf.Empty);
+
+  rpc AddProduct (ProductRequest) returns (ProductResponse);
+  rpc GetProduct (GetProductRequest) returns (ProductResponse);
+  rpc GetAllProducts (google.protobuf.Empty) returns (AllProductsResponse);
+  rpc UpdateProduct (ProductRequest) returns (ProductResponse);
+  rpc DeleteProduct (DeleteProductRequest) returns (google.protobuf.Empty);
 }
