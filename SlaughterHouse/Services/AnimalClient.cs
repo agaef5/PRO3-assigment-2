@@ -8,7 +8,7 @@ public class AnimalClient(SlaughterHouseService.SlaughterHouseServiceClient svC)
     private readonly SlaughterHouseService.SlaughterHouseServiceClient _svC =
         svC;
     
-    public async Task<AnimalResponse> AddAnimalAsync(int id, double weight, DateTime arrivalDate)
+    public async Task<AnimalResponse> AddAnimalAsync(string regNum, double weight, DateTime arrivalDate)
     {
         var arrivalUtc = arrivalDate.Kind == DateTimeKind.Utc
             ? arrivalDate
@@ -16,9 +16,9 @@ public class AnimalClient(SlaughterHouseService.SlaughterHouseServiceClient svC)
         
         Animal animal = new Animal
         {
-            AnimalId = id,
             AnimalWeight = weight,
             ArrivalDate = Timestamp.FromDateTime(arrivalUtc),
+            RegistrationNumber = regNum
         };
         AnimalRequest request = new AnimalRequest { Animal = animal };
         return await _svC.AddAnimalAsync(request);
