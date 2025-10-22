@@ -65,7 +65,9 @@
       },
       "SlaughterHouse/1.0.0": {
         "dependencies": {
-          "Google.Protobuf": "3.27.0"
+          "Google.Protobuf": "3.27.0",
+          "Grpc.Core.Api": "2.66.0",
+          "Grpc.Net.Client": "2.66.0"
         },
         "runtime": {
           "SlaughterHouse.dll": {

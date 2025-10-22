@@ -1,12 +1,29 @@
 using System;
+using SlaughterHouse.Gateways;
+using SlaughterHouse.Services;
+using SlaughterhouseCLI.ManageAnimals;
 
 namespace SlaughterhouseCLI
 {
     public class CliApp
     {
+        private readonly SlaughterHouseGateway _gateway;
+        private readonly AnimalClient _animalClient;
+
+        private readonly AnimalActions _animalActions;
+
+        public CliApp()
+        {
+            _gateway = new SlaughterHouseGateway();
+            _animalClient = new AnimalClient(_gateway.Client);
+
+            _animalActions = new AnimalActions(_animalClient);
+        }
+        
         public void Start()
         {
             bool running = true;
+            
             while (running)
             {
                 Console.WriteLine("Welcome to the Slaughterhouse CLI!");
@@ -20,7 +37,7 @@ namespace SlaughterhouseCLI
                 switch (choice)
                 {
                     case "1":
-                        RegisterAnimal();
+                        RegisterAnimalAsync().GetAwaiter().GetResult();
                         break;
                     case "2":
                         CutAnimal();
@@ -38,10 +55,10 @@ namespace SlaughterhouseCLI
             }
         }
 
-        private void RegisterAnimal()
+        private async Task RegisterAnimalAsync()
         {
-            var animalActions = new ManageAnimals.AnimalActions();
-            animalActions.RegisterAnimal();
+            var animalActions = new ManageAnimals.AnimalActions(_animalClient);
+            await animalActions.RegisterAnimal();
         }
 
         private void CutAnimal()
