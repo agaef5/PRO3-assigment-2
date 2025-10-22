@@ -57,8 +57,7 @@ namespace SlaughterhouseCLI
 
         private async Task RegisterAnimalAsync()
         {
-            var animalActions = new ManageAnimals.AnimalActions(_animalClient);
-            await animalActions.RegisterAnimal();
+            await _animalActions.RegisterAnimal();
         }
 
         private void CutAnimal()
