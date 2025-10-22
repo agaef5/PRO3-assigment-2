@@ -1,6 +1,8 @@
 syntax = "proto3";
 
 package slaughterhouse;
+
+option csharp_namespace = "SlaughterHouse.Api";
 option java_multiple_files = true;
 option java_package = "com.slaughterhouse.grpc";
 option java_outer_classname = "SlaughterHouseProto";
