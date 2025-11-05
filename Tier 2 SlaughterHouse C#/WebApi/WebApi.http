@@ -1,6 +1,9 @@
 @WebApi_HostAddress = http://localhost:5191
 
-GET {{WebApi_HostAddress}}/slaughterhouse/
+GET {{WebApi_HostAddress}}/_probe/tier3
+Accept: application/json
+
+GET {{WebApi_HostAddress}}/slaughterhouse/animals
 Accept: application/json
 
 ###
