@@ -1,7 +1,7 @@
 using Grpc.Net.Client;
 using SlaughterHouse.Api;
 
-namespace SlaughterHouse.Core.Gateways;
+namespace SlaughterHouse.Gateways;
 
 public class SlaughterHouseGateway : IAsyncDisposable 
 { 

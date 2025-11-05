@@ -1,7 +1,6 @@
-using System;
 using SlaughterHouse.Services;
 
-namespace SlaughterhouseCLI.ManageAnimals
+namespace CLI.UI.ManageAnimals
 {
     public class AnimalActions(AnimalClient client)
     {

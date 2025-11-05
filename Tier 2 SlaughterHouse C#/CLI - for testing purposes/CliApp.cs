@@ -1,7 +1,7 @@
 using System;
+using CLI.UI.ManageAnimals;
 using SlaughterHouse.Gateways;
 using SlaughterHouse.Services;
-using SlaughterhouseCLI.ManageAnimals;
 
 namespace SlaughterhouseCLI
 {
