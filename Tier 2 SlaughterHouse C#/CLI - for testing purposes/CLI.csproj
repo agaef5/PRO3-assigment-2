@@ -10,6 +10,7 @@
     <ItemGroup>
         <!-- Reference the main library -->
         <ProjectReference Include="..\SlaughterHouse\SlaughterHouse.csproj" />
+        <ProjectReference Include="..\Core\SlaughterHouse.csproj" />
     </ItemGroup>
 
     <ItemGroup>
