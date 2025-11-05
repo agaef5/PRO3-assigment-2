@@ -1,18 +1,17 @@
+using SlaughterHouse.Api; // generated from your proto
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+app.MapOpenApi();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.MapGet("/slaughterhouse/animals", async (SlaughterHouseService.SlaughterHouseServiceClient client) =>
 {
-    app.MapOpenApi();
-}
-
-app.UseHttpsRedirection();
+    var res = await client.GetAllAnimalsAsync(new Google.Protobuf.WellKnownTypes.Empty());
+    return Results.Ok(res.Animals);
+});
 
 app.Run();
-

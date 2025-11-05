@@ -1,7 +1,7 @@
 using Google.Protobuf.WellKnownTypes;
 using SlaughterHouse.Api;
 
-namespace SlaughterHouse.Services;
+namespace WebApi.Gateways.Clients;
 
 public class AnimalClient(SlaughterHouseService.SlaughterHouseServiceClient svC)
 {

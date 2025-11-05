@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>enable</ImplicitUsings><Protobuf_IncludeGeneratedFiles>true</Protobuf_IncludeGeneratedFiles>
   </PropertyGroup>
 
     <ItemGroup>
@@ -13,12 +13,20 @@
                 GrpcServices="Client" />
     </ItemGroup>
 
+    <ItemGroup>
+        <!-- Base protobuf dependency (no client/server generated) -->
+        <PackageReference Include="Google.Protobuf" Version="3.27.0" />
+        <PackageReference Include="Grpc.Tools" Version="2.66.0" PrivateAssets="All" />
+        <PackageReference Include="Grpc.Net.Client" Version="2.62.0" />
+    </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-rc.1.25451.107" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\SlaughterHouse.csproj" />
+    <Folder Include="Domains\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
