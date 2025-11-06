@@ -1,6 +1,6 @@
 namespace WebApi.Gateways.Clients;
 
-public class TrayClient
+public class TrayService
 {
     
 }
