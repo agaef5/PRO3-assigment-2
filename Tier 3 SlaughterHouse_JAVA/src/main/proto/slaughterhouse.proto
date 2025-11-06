@@ -52,6 +52,7 @@ message AnimalPart {
   PartType part_type = 4;
   google.protobuf.Timestamp arrival_date = 5;
   int64 tray_id = 6; // optional
+  string origin = 7;
 }
 
 // Matches Tray.java

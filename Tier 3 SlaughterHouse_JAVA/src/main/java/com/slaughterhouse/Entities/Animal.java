@@ -18,6 +18,10 @@ public class Animal {
 
   @Column(nullable = false)
   private Timestamp arrivalDate;
+  
+  @Column (nullable = false)
+  private String origin;
+
 
   public Long getId()
   {
