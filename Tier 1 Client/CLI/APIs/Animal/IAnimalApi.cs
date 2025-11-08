@@ -1,6 +1,6 @@
 namespace WebAPI.ApiContracts;
 
-public interface IQuestApi
+public interface IAnimalApi
 {
-    Task<CreateQuestResponse> CreateQuest(CreateQuestRequest request, CancellationToken ct = default);
+    Task<CreateAnimalResponse> CreateAnimal(CreateAnimalRequest request, CancellationToken ct = default);
 }
