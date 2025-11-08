@@ -7,10 +7,7 @@
   </PropertyGroup>
 
     <ItemGroup>
-        <Protobuf
-                Include="$(MSBuildProjectDirectory)\..\..\SharedProtos\slaughterhouse.proto"
-                ProtoRoot="$(MSBuildProjectDirectory)\..\..\SharedProtos"
-                GrpcServices="Client" />
+        <Protobuf Include="$(MSBuildProjectDirectory)\..\..\SharedProtos\slaughterhouse.proto" ProtoRoot="$(MSBuildProjectDirectory)\..\..\SharedProtos" GrpcServices="Client" />
     </ItemGroup>
 
     <ItemGroup>
