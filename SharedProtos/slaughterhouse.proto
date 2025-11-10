@@ -40,8 +40,8 @@ enum ProductStatus {
 
 // Matches your JPA entity com.slaughterhouse.Entities.Animal
 message Animal {
-  int64 animal_id = 1;                  // maps to Long id
-  string registration_number = 2;       // unique in DB
+  optional int64 animal_id = 1;                  // maps to Long id
+  optional string registration_number = 2;       // unique in DB
   double animal_weight = 3;             // matches double weight
   google.protobuf.Timestamp arrival_date = 4; // Timestamp for arrivalDate
   string farm = 5;                      //animal's origin
