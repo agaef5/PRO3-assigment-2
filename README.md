@@ -1,4 +1,4 @@
-# PRO3-assigment-2
+# PRO3-assignment-2
 
 Case:
 "Your task is to simulate the operation of a nearby slaughterhouse. In one end of the slaughterhouse living animals arrive and in the other end various products, consisting of one or more animal parts, depart. The slaughterhouse hast hree station swhere smaller parts of the whole process take place.
