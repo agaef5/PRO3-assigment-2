@@ -1,6 +1,4 @@
-using System;
-
-namespace WebApi.ApiContracts;
+namespace SharedHTTPs.AnimalContracts;
 
 public record CreateAnimalRequest
 {
