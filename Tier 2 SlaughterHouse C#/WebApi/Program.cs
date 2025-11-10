@@ -1,6 +1,7 @@
 using Google.Protobuf.WellKnownTypes;
 using SlaughterHouse.Api;
-using WebApi.Gateways.Clients; // generated from your proto
+using WebApi.Gateways.Clients;
+using WebApi.Services.Implementations; // generated from your proto
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,12 +19,6 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 app.MapOpenApi();
 
-
-app.MapGet("/slaughterhouse/animals", async (SlaughterHouseService.SlaughterHouseServiceClient client) =>
-{
-    var res = await client.GetAllAnimalsAsync(new Google.Protobuf.WellKnownTypes.Empty());
-    return Results.Ok(res.Animals);
-});
 
 app.MapGet("/_probe/tier3", async (SlaughterHouseService.SlaughterHouseServiceClient client) =>
 {

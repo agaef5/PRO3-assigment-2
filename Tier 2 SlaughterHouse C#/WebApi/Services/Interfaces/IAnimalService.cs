@@ -5,6 +5,7 @@ namespace WebApi.Gateways.Clients;
 
 public interface IAnimalService{
     
-        Task<AnimalResponse> AddAnimalAsync(AnimalDto dto);
-        Task<AllAnimalsResponse> GetAllAnimalsAsync();
-    }
+        Task<AnimalDto> CreateAnimalAsync(CreateAnimalDto dto);
+        Task<List<AnimalDto>> GetAllAnimalsAsync();
+        Task<AnimalDto> GetAnimalByIdAsync(int id);
+}

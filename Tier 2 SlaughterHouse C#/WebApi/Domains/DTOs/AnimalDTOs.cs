@@ -2,15 +2,14 @@ namespace WebApi.Domains.DTOs;
 
 // Used for HTTP responses
 public record AnimalDto(
-    int AnimalId,
+    long AnimalId,
     string RegistrationNumber,
     double AnimalWeight,
     DateTime ArrivalDate,
-    string Origination);
+    string Farm);
 
 public record CreateAnimalDto(
-    string RegistrationNumber,
     double AnimalWeight,
     DateTime ArrivalDate,
-    string Origination);
+    string Farm);
     

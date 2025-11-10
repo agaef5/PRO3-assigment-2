@@ -1,9 +1,21 @@
-@WebApi_HostAddress = http://localhost:5191
+@WebApi_HostAddress = http://localhost:5191/slaughterhouse
 
-GET {{WebApi_HostAddress}}/_probe/tier3
+GET {{WebApi_HostAddress}}/animals
 Accept: application/json
 
-GET {{WebApi_HostAddress}}/slaughterhouse/animals
+GET {{WebApi_HostAddress}}/animals/1
+Accept: application/json
+
+POST {{WebApi_HostAddress}}/animals
+Content-Type: application/json
+
+{
+  "animalWeight": 312.7,
+  "arrivalDate": "2025-11-10T17:00:00Z",
+  "farm": "DK-XYZ" // ignored until proto has Farm
+}
+
+GET {{WebApi_HostAddress}}/_probe/tier3
 Accept: application/json
 
 ###
