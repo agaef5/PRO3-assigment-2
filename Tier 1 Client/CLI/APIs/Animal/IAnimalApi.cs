@@ -1,4 +1,6 @@
-namespace WebAPI.ApiContracts;
+using CLI.ApiContracts;
+
+namespace CLI.APIs.Animal;
 
 public interface IAnimalApi
 {

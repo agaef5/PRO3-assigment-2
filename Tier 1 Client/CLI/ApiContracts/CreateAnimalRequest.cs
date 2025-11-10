@@ -1,11 +1,11 @@
 using System;
 
-namespace WebApi.ApiContracts;
+namespace CLI.ApiContracts;
 
-public class CreateAnimalRequest (DateTime date, string regNo, double weight, string origin)
+public class CreateAnimalRequest (DateTime ArrivalDate, string RegistrationNumber, double AnimalWeight, string Farm)
 {
     public string RegistrationNumber { get; set; } = string.Empty;
     public double AnimalWeight { get; set; }
     public DateTime ArrivalDate { get; set; }
-    public string Origin { get; set; } = string.Empty;
+    public string Farm { get; set; } = string.Empty;
 }

@@ -1,10 +1,13 @@
-using WebAPI.ApiContracts;
-using CLI.Views
+using CLI.ApiContracts;
+using CLI.APIs.Animal;
+using CLI.Views;
+using CLI.ViewModels;
 
 namespace CLI;
 
 public class CliApp
 {
+    
     private static readonly HttpClient Client =new HttpClient
     {
         BaseAddress = new Uri("http://localhost:5268")
@@ -12,7 +15,7 @@ public class CliApp
     
     private static readonly IAnimalApi AnimalApi = new AnimalApi(Client);
     private static readonly AnimalVM AnimalVm = new(AnimalApi);
-    private static readonly AnimalView AnimalView = new(AnimalVM);
+    private static readonly AnimalView AnimalView = new(AnimalVm);
 
     public void Start()
     {
