@@ -6,7 +6,7 @@ public class Animal(int animalId, string regNum, DateTime arrDate, double weight
    public string RegistrationNumber { get; set; } = regNum;
    public DateTime ArrivalDate { get; set; } = arrDate;
    public double AnimalWeight { get; set; } = weight;
-   public string Origination { get; set; } = origination;
+   public string Farm { get; set; } = origination;
    // public string Species {get; set;}
    
 }

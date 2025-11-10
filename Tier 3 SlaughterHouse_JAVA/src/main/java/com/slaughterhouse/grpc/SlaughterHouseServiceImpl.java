@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.Instant;
 
+import static org.apache.logging.log4j.util.Strings.isBlank;
+
 @GrpcService
 public class SlaughterHouseServiceImpl extends SlaughterHouseServiceGrpc.SlaughterHouseServiceImplBase {
 
@@ -23,7 +25,17 @@ public class SlaughterHouseServiceImpl extends SlaughterHouseServiceGrpc.Slaught
   @Override
   public void addAnimal(AnimalRequest request, StreamObserver<AnimalResponse> responseObserver) {
     Animal inEntity = toEntity(request.getAnimal());
-    Animal saved = animalRepository.save(inEntity);
+
+      // ensure required fields are present BEFORE save
+      if (isBlank(inEntity.getRegistrationNumber())) {
+          inEntity.setRegistrationNumber(generateRegNumber(inEntity.getArrivalDate()));
+      }
+      if (isBlank(inEntity.getFarm())) {
+          // you can reject instead with an error if farm must come from client
+          inEntity.setFarm("TEMP_FARM");
+      }
+
+      Animal saved = animalRepository.save(inEntity);
 
     var out = toProto(saved);
     responseObserver.onNext(AnimalResponse.newBuilder().setAnimal(out).build());
@@ -54,6 +66,7 @@ public class SlaughterHouseServiceImpl extends SlaughterHouseServiceGrpc.Slaught
     Timestamp ts = msg.getArrivalDate();
     Instant instant = Instant.ofEpochSecond(ts.getSeconds(), ts.getNanos());
     a.setArrivalDate(java.sql.Timestamp.from(instant));
+    a.setFarm(msg.getFarm());
 
     return a;
   }
@@ -70,6 +83,19 @@ public class SlaughterHouseServiceImpl extends SlaughterHouseServiceGrpc.Slaught
         .setRegistrationNumber(entity.getRegistrationNumber())
         .setAnimalWeight(entity.getWeight())
         .setArrivalDate(ts)
+        .setFarm(entity.getFarm())
         .build();
   }
+
+    private static boolean isBlank(String s) { return s == null || s.isBlank(); }
+
+    private static String generateRegNumber(java.sql.Timestamp arrivalDate) {
+        var date = arrivalDate.toInstant()
+                .atZone(java.time.ZoneOffset.UTC)
+                .toLocalDate();
+
+        String yyyymmdd = date.format(java.time.format.DateTimeFormatter.BASIC_ISO_DATE);
+        String unique = java.util.UUID.randomUUID().toString().substring(0, 4).toUpperCase();
+        return "DK-" + yyyymmdd + "-" + unique;
+    }
 }

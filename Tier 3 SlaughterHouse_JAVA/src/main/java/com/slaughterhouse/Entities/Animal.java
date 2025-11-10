@@ -1,7 +1,7 @@
 package com.slaughterhouse.Entities;
-
 import jakarta.persistence.*;
 
+import java.sql.Time;
 import java.sql.Timestamp;
 
 // Animal.java
@@ -20,7 +20,7 @@ public class Animal {
   private Timestamp arrivalDate;
   
   @Column (nullable = false)
-  private String origin;
+  private String farm;
 
 
   public Long getId()
@@ -62,6 +62,10 @@ public class Animal {
   {
     this.arrivalDate = arrivalDate;
   }
+
+  public void setFarm(String farm) {this.farm = farm;}
+
+    public String getFarm() {return farm;}
 
   // getters/setters...
 }

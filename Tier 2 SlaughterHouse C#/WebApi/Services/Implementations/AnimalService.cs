@@ -23,7 +23,7 @@ public class AnimalService(
         {
             AnimalWeight = req.AnimalWeight,
             ArrivalDate = Timestamp.FromDateTime(utcArrival),
-            // Ori = req.Farm ?? "TEMP_FARM"
+            Farm = req.Farm,
         };
 
         try
@@ -72,3 +72,4 @@ public class AnimalService(
         return AnimalConverter.ToHttp(response.Animal);
     }
 }
+
