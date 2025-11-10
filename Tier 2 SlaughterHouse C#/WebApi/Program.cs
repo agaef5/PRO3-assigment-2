@@ -1,11 +1,9 @@
 using Google.Protobuf.WellKnownTypes;
 using SlaughterHouse.Api;
-using WebApi.Gateways.Clients;
-using WebApi.Services.Implementations; // generated from your proto
+using WebApi.Services.Implementations;
+using WebApi.Services.Interfaces; // generated from your proto
 
 var builder = WebApplication.CreateBuilder(args);
-
-
 
 builder.Services.AddGrpcClient<SlaughterHouse.Api.SlaughterHouseService.SlaughterHouseServiceClient>(o =>
     o.Address = new Uri("http://localhost:9090"));

@@ -1,11 +1,10 @@
-using SlaughterHouse.Api;
-using WebApi.Domains.DTOs;
+using SharedHTTPs.AnimalContracts;
 
-namespace WebApi.Gateways.Clients;
+namespace WebApi.Services.Interfaces;
 
 public interface IAnimalService{
     
-        Task<AnimalDto> CreateAnimalAsync(CreateAnimalDto dto);
-        Task<List<AnimalDto>> GetAllAnimalsAsync();
-        Task<AnimalDto> GetAnimalByIdAsync(int id);
+        Task<AnimalHttpResponse> CreateAnimalAsync(CreateAnimalHttpRequest dto);
+        Task<List<AnimalHttpResponse>> GetAllAnimalsAsync();
+        Task<AnimalHttpResponse> GetAnimalByIdAsync(int id);
 }

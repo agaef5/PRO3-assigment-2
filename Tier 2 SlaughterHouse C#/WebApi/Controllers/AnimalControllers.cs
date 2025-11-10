@@ -1,7 +1,5 @@
-using Google.Protobuf.WellKnownTypes;
-using SlaughterHouse.Entities;
-using WebApi.Domains.DTOs;
-using WebApi.Gateways.Clients;
+using SharedHTTPs.AnimalContracts;
+using WebApi.Services.Interfaces;
 
 namespace WebApi.Controllers;
 
@@ -15,9 +13,9 @@ public class AnimalControllers
             return Results.Ok(res);
         });
         
-        app.MapPost("/slaughterhouse/animals", async (CreateAnimalDto dto, IAnimalService service) =>
+        app.MapPost("/slaughterhouse/animals", async (CreateAnimalHttpRequest dto, IAnimalService service) =>
             {
-                AnimalDto created = await service.CreateAnimalAsync(dto);
+                AnimalHttpResponse created = await service.CreateAnimalAsync(dto);
                 return Results.Created($"/api/animals/{created.AnimalId}", created);
             }
             );

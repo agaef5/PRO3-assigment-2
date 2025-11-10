@@ -1,6 +1,4 @@
-﻿using WebApi.Domains.DTOs;
-
-namespace WebApi.Domains.Entities;
+﻿namespace WebApi.Domains.Entities;
 
 public class Animal(int animalId, string regNum, DateTime arrDate, double weight, string origination)
 {
