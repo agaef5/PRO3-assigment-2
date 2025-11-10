@@ -1,3 +1,3 @@
 namespace DefaultNamespace;
 
-public record GetAnimalsRequest
+public record GetAnimalsRequest{}

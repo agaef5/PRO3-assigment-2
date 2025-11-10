@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{198100D9-8C8F-48D7-A467-54080F31CF85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedHTTPs", "..\SharedHTTPs\SharedHTTPs.csproj", "{DDD92E0E-ECA8-429B-8456-F9718C768423}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +29,20 @@ Global
 		{198100D9-8C8F-48D7-A467-54080F31CF85}.Release|x64.Build.0 = Release|Any CPU
 		{198100D9-8C8F-48D7-A467-54080F31CF85}.Release|x86.ActiveCfg = Release|Any CPU
 		{198100D9-8C8F-48D7-A467-54080F31CF85}.Release|x86.Build.0 = Release|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Debug|x64.Build.0 = Debug|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Debug|x86.Build.0 = Debug|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Release|x64.ActiveCfg = Release|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Release|x64.Build.0 = Release|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Release|x86.ActiveCfg = Release|Any CPU
+		{DDD92E0E-ECA8-429B-8456-F9718C768423}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
