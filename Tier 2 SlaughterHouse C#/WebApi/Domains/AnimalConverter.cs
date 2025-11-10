@@ -14,7 +14,7 @@ public class AnimalConverter
         {
             AnimalId = animal.AnimalId,
             AnimalWeight = animal.AnimalWeight,
-            ArrivalDate = animal.ArrivalDate.ToDateTime(),
+            ArrivalDateUtc = animal.ArrivalDate.ToDateTime(),
             Farm = animal.RegistrationNumber,
             RegistrationNumber = animal.RegistrationNumber
         };

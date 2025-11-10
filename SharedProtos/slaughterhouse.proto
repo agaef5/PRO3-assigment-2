@@ -44,6 +44,7 @@ message Animal {
   string registration_number = 2;       // unique in DB
   double animal_weight = 3;             // matches double weight
   google.protobuf.Timestamp arrival_date = 4; // Timestamp for arrivalDate
+  string farm = 5;                      //animal's origin
 }
 
 // Matches AnimalPart.java

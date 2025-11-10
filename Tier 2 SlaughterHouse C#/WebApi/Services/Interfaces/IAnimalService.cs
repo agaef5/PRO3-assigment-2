@@ -4,7 +4,7 @@ namespace WebApi.Services.Interfaces;
 
 public interface IAnimalService{
     
-        Task<AnimalHttpResponse> CreateAnimalAsync(CreateAnimalHttpRequest dto);
+        Task<AnimalHttpResponse?> CreateAnimalAsync(CreateAnimalHttpRequest request);
         Task<List<AnimalHttpResponse>> GetAllAnimalsAsync();
-        Task<AnimalHttpResponse> GetAnimalByIdAsync(int id);
+        Task<AnimalHttpResponse?> GetAnimalByIdAsync(long id);
 }
