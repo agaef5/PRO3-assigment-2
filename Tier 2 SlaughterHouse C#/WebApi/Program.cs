@@ -1,5 +1,6 @@
 using Google.Protobuf.WellKnownTypes;
 using SlaughterHouse.Api;
+using WebApi.Controllers;
 using WebApi.Services.Implementations;
 using WebApi.Services.Interfaces; // generated from your proto
 
@@ -14,10 +15,13 @@ builder.Services.AddScoped<IAnimalService, AnimalService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
+
 var app = builder.Build();
 app.MapOpenApi();
 
+AnimalControllers.Map(app);
 
+// For testing purposes: checking if Tier 2 - Tier 3 connection works
 app.MapGet("/_probe/tier3", async (SlaughterHouseService.SlaughterHouseServiceClient client) =>
 {
     try
@@ -34,8 +38,6 @@ app.MapGet("/_probe/tier3", async (SlaughterHouseService.SlaughterHouseServiceCl
         return Results.Problem($"Tier3 call failed: {ex.Message}");
     }
 });
-
-app.Logger.LogInformation("Tier3 gRPC at {Addr}", builder.Configuration["Tier3:GrpcAddress"]);
 
 app.Run();
 
